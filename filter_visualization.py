@@ -10,7 +10,7 @@ def filter_show(model, model_name):
     for param in model.parameters():
         data = param.data.cpu()
         if len(data.shape) == 4:
-            fig, axs = plt.subplots(data.shape[0], data.shape[1], figsize=(5, 2))
+            fig, axs = plt.subplots(data.shape[0], data.shape[1], figsize=(12, 15))
             if data.shape[1] == 1:
                 for i in range(data.shape[0]):
                     for j in range(data.shape[1]):

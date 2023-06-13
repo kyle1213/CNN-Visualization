@@ -1,5 +1,5 @@
 # CNN-Visualization
-CNN Visualization with pytorch
+CNN featuremaps, filters Visualization with pytorch
 
 내가 한 이상한 짓:
 1. test_loader의 dataset에 train 넣고 validation을 한 행(근데 왜 train, test 그래프가 다르게 나오지)

@@ -1,6 +1,6 @@
 # CNN-Visualization
-CNN featuremaps, filters Visualization with pytorch
-dataset: MNIST
+CNN featuremaps, filters Visualization with pytorch  
+dataset: MNIST  
 model: very simple conv net
 
 내가 한 이상한 짓:

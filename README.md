@@ -29,9 +29,15 @@ epoch 100, 1st layer
 epoch 100, 2nd layer
 
 # feature maps
-![image]()  
-![image]()  
-![image]()  
-![image]()  
-![image]()  
-![image]()  
+![image](/feature%20map/fm1_0.png)
+epoch 0, 1st layer
+![image](/feature%20map/fm2_0.png)  
+epoch 0, 2nd layer
+![image](/feature%20map/fm1_10.png) 
+epoch 10, 1st layer
+![image](/feature%20map/fm2_10.png)  
+epoch 10, 2nd layer
+![image](/feature%20map/fm1_100.png)  
+epoch 100, 1st layer
+![image](/feature%20map/fm2_100.png)  
+epoch 100, 2nd layer

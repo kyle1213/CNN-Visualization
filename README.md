@@ -15,10 +15,16 @@ feature map의 경우 첫 레이어는 입력 이미지의 형상이 잘 보이�
 ![image](/train%20result/result.png)
 
 # filter imgs
-![image](/filter%20imgs/model0%200.png)
-![image](/filter%20imgs/model0%201.png)
-![image](/filter%20imgs/model10%200.png)
-![image](/filter%20imgs/model10%201.png)
-![image](/filter%20imgs/model100%200.png)
-![image](/filter%20imgs/model100%201.png)
+![image1](/filter%20imgs/model0%200.png)  
+epoch 0, 1st layer
+![image](/filter%20imgs/model0%201.png)  
+epoch 0, 2nd layer
+![image](/filter%20imgs/model10%200.png)  
+epoch 10, 1st layer
+![image](/filter%20imgs/model10%201.png)  
+epoch 10, 2nd layer
+![image](/filter%20imgs/model100%200.png)  
+epoch 100, 1st layer
+![image](/filter%20imgs/model100%201.png)  
+epoch 100, 2nd layer
 

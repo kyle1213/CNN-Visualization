@@ -11,4 +11,4 @@ model: very simple conv net
 filter img의 경우 처음 init 상태와 학습 후에 큰 차이가 없어 보인다.  
 feature map의 경우 첫 레이어는 입력 이미지의 형상이 잘 보이지만 두번째 레이어에서는 입력 이미지의 형상을 찾아보기 어려웠다.  
 
-train result/result.png
+

@@ -40,9 +40,6 @@ if __name__ == '__main__':
 
     cuda = torch.device('cuda')
 
-    model = CNN()
-    model = model.cuda()
-
     data, _ = test[4]
     data = data.to(cuda)
     data.unsqueeze_(0)
@@ -59,9 +56,9 @@ if __name__ == '__main__':
 
     activation = {}
 
-    model.conv1.register_forward_hook(get_activation('conv1'))
-    model.conv2.register_forward_hook(get_activation('conv2'))
-    output = model(data)
+    model0.conv1.register_forward_hook(get_activation('conv1'))
+    model0.conv2.register_forward_hook(get_activation('conv2'))
+    output0 = model0(data)
 
     plt.imshow(data.detach().cpu().squeeze(), cmap='Greys')
     plt.show()
@@ -74,7 +71,7 @@ if __name__ == '__main__':
             for j in range(4):
                ax[i,j].imshow(act[k].detach().cpu().numpy(), cmap='Greys')
                k+=1
-               plt.savefig('fm1.png')
+               plt.savefig('fm1_0.png')
 
     k=0
     act = activation['conv2'].squeeze()
@@ -83,4 +80,54 @@ if __name__ == '__main__':
             for j in range(4):
                ax[i,j].imshow(act[k].detach().cpu().numpy(), cmap='Greys')
                k+=1
-               plt.savefig('fm2.png')
+               plt.savefig('fm2_0.png')
+
+    activation = {}
+
+    model10.conv1.register_forward_hook(get_activation('conv1'))
+    model10.conv2.register_forward_hook(get_activation('conv2'))
+    output10 = model10(data)
+
+    k = 0
+    act = activation['conv1'].squeeze()
+    fig, ax = plt.subplots(act.size(0) // 4, 4, figsize=(12, 15))
+
+    for i in range(act.size(0) // 4):
+        for j in range(4):
+            ax[i, j].imshow(act[k].detach().cpu().numpy(), cmap='Greys')
+            k += 1
+            plt.savefig('fm1_10.png')
+
+    k = 0
+    act = activation['conv2'].squeeze()
+    fig, ax = plt.subplots(act.size(0) // 4, 4, figsize=(12, 15))
+    for i in range(act.size(0) // 4):
+        for j in range(4):
+            ax[i, j].imshow(act[k].detach().cpu().numpy(), cmap='Greys')
+            k += 1
+            plt.savefig('fm2_10.png')
+
+    activation = {}
+
+    model100.conv1.register_forward_hook(get_activation('conv1'))
+    model100.conv2.register_forward_hook(get_activation('conv2'))
+    output100 = model100(data)
+
+    k = 0
+    act = activation['conv1'].squeeze()
+    fig, ax = plt.subplots(act.size(0) // 4, 4, figsize=(12, 15))
+
+    for i in range(act.size(0) // 4):
+        for j in range(4):
+            ax[i, j].imshow(act[k].detach().cpu().numpy(), cmap='Greys')
+            k += 1
+            plt.savefig('fm1_100.png')
+
+    k = 0
+    act = activation['conv2'].squeeze()
+    fig, ax = plt.subplots(act.size(0) // 4, 4, figsize=(12, 15))
+    for i in range(act.size(0) // 4):
+        for j in range(4):
+            ax[i, j].imshow(act[k].detach().cpu().numpy(), cmap='Greys')
+            k += 1
+            plt.savefig('fm2_100.png')

@@ -12,32 +12,32 @@ filter img의 경우 처음 init 상태와 학습 후에 큰 차이가 없어 �
 feature map의 경우 첫 레이어는 입력 이미지의 형상이 잘 보이지만 두번째 레이어에서는 입력 이미지의 형상을 찾아보기 어려웠다. 하지만 학습 후의 두번째 레이어 feature map들은 숫자의 형상이 약간 보였다.
 
 # train result
-![image](/train%20result/result.png)
+![image](/MNIST/train%20result/result.png)
 
 # filter imgs
-![image](/filter%20imgs/model0%200.png)  
+![image](/MNIST/filter%20imgs/model0%200.png)  
 epoch 0, 1st layer
-![image](/filter%20imgs/model0%201.png)  
+![image](/MNIST/filter%20imgs/model0%201.png)  
 epoch 0, 2nd layer
-![image](/filter%20imgs/model10%200.png)  
+![image](/MNIST/filter%20imgs/model10%200.png)  
 epoch 10, 1st layer
-![image](/filter%20imgs/model10%201.png)  
+![image](/MNIST/filter%20imgs/model10%201.png)  
 epoch 10, 2nd layer
-![image](/filter%20imgs/model100%200.png)  
+![image](/MNIST/filter%20imgs/model100%200.png)  
 epoch 100, 1st layer
-![image](/filter%20imgs/model100%201.png)  
+![image](/MNIST/filter%20imgs/model100%201.png)  
 epoch 100, 2nd layer
 
 # feature maps
-![image](/feature%20map/fm1_0.png)
+![image](/MNIST/feature%20map/fm1_0.png)
 epoch 0, 1st layer
-![image](/feature%20map/fm2_0.png)  
+![image](/MNIST/feature%20map/fm2_0.png)  
 epoch 0, 2nd layer
-![image](/feature%20map/fm1_10.png) 
+![image](/MNIST/feature%20map/fm1_10.png) 
 epoch 10, 1st layer
-![image](/feature%20map/fm2_10.png)  
+![image](/MNIST/feature%20map/fm2_10.png)  
 epoch 10, 2nd layer
-![image](/feature%20map/fm1_100.png)  
+![image](/MNIST/feature%20map/fm1_100.png)  
 epoch 100, 1st layer
-![image](/feature%20map/fm2_100.png)  
+![image](/MNIST/feature%20map/fm2_100.png)  
 epoch 100, 2nd layer
